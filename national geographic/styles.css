@@ -1,0 +1,92 @@
+/*menu*/
+
+
+:root{
+    --primary:#f1bb0a;
+    
+}
+
+body{
+    font-family:Lato;
+    background-color:black;
+    color:white;
+}                                                 
+
+nav.menu{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    background-color:#ffffff;
+    height:6rem;
+}
+
+
+img.logo{
+    height:5rem;
+}
+
+/*
+.hide{
+    height:5rem;
+}
+*/
+
+    .icons{
+        flex-basis:20%;
+        justify-content:space-around;
+        display:flex;
+    }
+
+
+/*header*/
+header.site-header{
+    background-color:black;
+    text-align:center;
+}
+
+.icons{
+    flex-basis:22%;
+}
+
+@media(min-width:768px){
+.renew{
+    border-bottom: 2px solid var(--primary);
+    background-size: 50% 200%;
+    background-image:linear-gradient(to bottom, #fff 50%, var(--primary) 50%);
+    transition: background-position .2s ease-in-out, color .2s ease-in-out;
+}
+
+
+.renew:hover{
+    background-position: 0 100%;
+}
+}
+
+.sub-button{
+    background-size: 200% 100%;
+    background-position:100% 0;
+    background-image:linear-gradient(to left, black 50%, var(--primary) 50%);
+    transition:background-position .2s ease-in-out, color .2s ease-in-out;
+    color:white;
+    padding:1rem;
+}
+
+.sub-button:hover{
+    background-position:0% 0;
+    color:black;
+}
+
+.icons i{
+    font-size:1.6rem;
+}
+
+/* Containers */
+
+.secondary-news-text .read-text{
+    color:black;
+    font-size:1.2rem;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
